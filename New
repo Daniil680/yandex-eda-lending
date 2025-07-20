@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Стань курьером Яндекс Еды</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Стань курьером Яндекс Еды — заработок от 1000₽ в день!</h1>
+    <p>Гибкий график, быстрые выплаты, минимальные требования.</p>
+    <a href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=9df582b0d91444dd9487d4e7394edb28&utm_content=blank" class="btn" target="_blank" rel="noopener noreferrer">Подать заявку</a>
+    <img src="images/courier.jpg" alt="Курьер Яндекс Еды" />
+  </header>
 
+  <section class="advantages">
+    <h2>Преимущества работы</h2>
+    <ul>
+      <li>Гибкий график</li>
+      <li>Минимум требований</li>
+      <li>Быстрые выплаты</li>
+      <li>Работа на собственном транспорте</li>
+    </ul>
+  </section>
+
+  <section class="how-it-works">
+    <h2>Как это работает</h2>
+    <ol>
+      <li>Регистрация</li>
+      <li>Обучение</li>
+      <li>Работа</li>
+      <li>Заработок</li>
+    </ol>
+  </section>
+
+  <section class="testimonials">
+    <h2>Отзывы курьеров</h2>
+    <blockquote>«Работаю уже месяц, всё нравится!» — Иван</blockquote>
+    <blockquote>«Удобно и выгодно» — Мария</blockquote>
+  </section>
+
+  <section class="application-form">
+    <h2>Подать заявку</h2>
+    <a href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=9df582b0d91444dd9487d4e7394edb28&utm_content=blank" class="btn" target="_blank" rel="noopener noreferrer">Перейти к регистрации</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Яндекс Еда — Курьеры</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
