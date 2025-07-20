@@ -137,13 +137,35 @@
     </ul>
   </section>
 
-  <section class="calculator">
-    <h2>Рассчитай свой заработок</h2>
-    <label for="hours">Введите часы работы в день:</label><br /><br />
-    <input type="number" id="hours" min="1" max="12" value="8" />
-    <button class="btn-calc" onclick="calculateSalary()">Рассчитать</button>
-    <div class="salary-result" id="salaryResult"></div>
-  </section>
+<section class="calculator">
+  <h2>Рассчитай свой заработок</h2>
+  <label for="hours">Введите часы работы в день:</label><br /><br />
+  <input type="number" id="hours" min="1" max="12" value="8" />
+  <button class="btn-calc" id="calcBtn">Рассчитать</button>
+  <div class="salary-result" id="salaryResult"></div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('calcBtn');
+    button.addEventListener('click', function () {
+      const hours = Number(document.getElementById('hours').value);
+      const resultBlock = document.getElementById('salaryResult');
+
+      if (isNaN(hours) || hours < 1 || hours > 12) {
+        resultBlock.textContent = 'Введите от 1 до 12 часов.';
+        return;
+      }
+
+      const hourlyRate = 900;
+      const salary = hours * hourlyRate;
+      resultBlock.textContent = Примерный заработок: ${salary.toLocaleString('ru-RU')} ₽ в день;
+    });
+
+    // Автоматический расчёт при загрузке
+    button.click();
+  });
+</script>
 
   <section class="testimonials">
     <h2>Отзывы курьеров</h2>
